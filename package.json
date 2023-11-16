@@ -10,7 +10,7 @@
         "@tsconfig/svelte": "^5.0.2",
         "autoprefixer": "^10.4.16",
         "axios": "^1.1.2",
-        "daisyui": "^4.0.8",
+        "daisyui": "^4.0.9",
         "laravel-vite-plugin": "^0.8.0",
         "postcss": "^8.4.31",
         "svelte-preprocess": "^5.1.0",
