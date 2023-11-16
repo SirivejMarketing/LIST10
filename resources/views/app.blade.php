@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
 
 <head>
     <meta charset="utf-8" />
@@ -7,9 +7,11 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @inertiaHead
 </head>
+<main>
 
-<body>
-    @inertia
-</body>
+    <body>
+        @inertia
+    </body>
+</main>
 
 </html>

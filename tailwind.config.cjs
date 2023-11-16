@@ -1,13 +1,41 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: "class",
+    darkMode: ["class", '[data-theme="dark"]'],
     content: ["./resources/**/*.svelte"],
     theme: {
         extend: {},
     },
     plugins: [require("daisyui")],
     daisyui: {
-        themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+        themes: [
+            "light",
+            "dark",
+            "cupcake",
+            {
+                day: {
+                    primary: "#00518c",
+                    secondary: "#e1efec",
+                    accent: "#1fb2a6",
+                    neutral: "#2b3440",
+                    "base-100": "#ffffff",
+                    info: "#3abff8",
+                    success: "#36d399",
+                    warning: "#fbbd23",
+                    error: "#f87272",
+                },
+                dawn: {
+                    primary: "#00518c", // cyan
+                    secondary: "#ffffff", // white
+                    accent: "#f87272", // red
+                    neutral: "#2a323c", // dark gray
+                    "base-100": "#1d232a", // lighter gray
+                    info: "#abd9e9", // light blue
+                    success: "#36d399", // light green
+                    warning: "#fbbd23", // yellow
+                    error: "#f87272", // red
+                },
+            },
+        ],
         darkTheme: "dark", // name of one of the included themes for dark mode
         base: true, // applies background color and foreground color for root element by default
         styled: true, // include daisyUI colors and design decisions for all components

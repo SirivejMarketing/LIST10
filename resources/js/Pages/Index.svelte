@@ -17,10 +17,13 @@
         >
             Count: {count}
         </button>
+        <button class="btn btn-primary">wasfafs</button>
+        <button class="btn btn-primary dark:btn-success">DARK</button>
+        <div class="text-blue-500 dark:text-red-500">BLUE RED</div>
     </div>
     <label class="swap swap-rotate">
         <!-- this hidden checkbox controls the state -->
-        <input type="checkbox" class="theme-controller" value="light" />
+        <input type="checkbox" class="theme-controller" value="dark" />
 
         <!-- sun icon -->
         <svg
