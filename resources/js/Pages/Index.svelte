@@ -7,7 +7,7 @@
     }
 </script>
 
-<main data-theme="dark">
+<main>
     <div class="flex flex-col items-center text-center space-y-4">
         <h1 class="block mt-4 font-bold text-4xl">{title}</h1>
         <button
@@ -20,7 +20,7 @@
     </div>
     <label class="swap swap-rotate">
         <!-- this hidden checkbox controls the state -->
-        <input type="checkbox" class="theme-controller" value="synthwave" />
+        <input type="checkbox" class="theme-controller" value="light" />
 
         <!-- sun icon -->
         <svg
