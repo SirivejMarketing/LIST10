@@ -8,6 +8,8 @@
     @inertiaHead
 </head>
 <main>
+    <input type="checkbox" value="dark" class="toggle theme-controller" />
+    <div class="text-blue-500 dark:text-red-500">BLUE RED</div>
 
     <body>
         @inertia
