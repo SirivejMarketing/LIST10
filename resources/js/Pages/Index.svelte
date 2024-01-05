@@ -5,6 +5,17 @@
     function handleClick() {
         count += 1;
     }
+    import { comicSans } from "../styles";
+    // import Echo from "laravel-echo";
+    // window.Echo = new Echo({
+    //     broadcaster: "socket.io",
+    //     client: io,
+    //     host: "http://localhost:3008/ws", // Update with your Fastify WebSocket host
+    // });
+    // echo.channel("route-link-channel").listen("RouteLinkStored", (event) => {
+    //     console.log("Route link stored:", event.routeLink);
+    //     // Handle the stored route link as needed
+    // });
 </script>
 
 <main>
@@ -17,9 +28,8 @@
         >
             Count: {count}
         </button>
-        <button class="btn btn-primary">wasfafs</button>
-        <button class="btn btn-primary dark:btn-success">DARK</button>
-        <div class="text-blue-500 dark:text-red-500">BLUE RED</div>
+        <button class="btn btn-primary">DUI</button>
+        <div class="text-blue-500 dark:text-red-500">DARKMODE</div>
     </div>
     <label class="swap swap-rotate">
         <!-- this hidden checkbox controls the state -->
@@ -45,4 +55,6 @@
             /></svg
         >
     </label>
+
+    <div class={comicSans}>COMIC SANS</div>
 </main>
