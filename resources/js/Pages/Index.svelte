@@ -57,4 +57,7 @@
     </label>
 
     <div class={comicSans}>COMIC SANS</div>
+    <div class="flex flex-col flex-wrap gap-4">
+        <div class="alert alert-info">Test build #1</div>
+    </div>
 </main>
