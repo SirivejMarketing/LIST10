@@ -20,7 +20,8 @@
 
 <main>
     <div class="flex flex-col items-center text-center space-y-4">
-        <h1 class="block mt-4 font-bold text-4xl">{title}</h1>
+        <!-- <h1 class="block mt-4 font-bold text-4xl">{title}</h1> -->
+        <h1 class="block mt-4 font-bold text-4xl">Hello Web</h1>
         <button
             class="bg-red-500 rounded-lg p-2 text-white font-bold"
             aria-labelledby="foo"
