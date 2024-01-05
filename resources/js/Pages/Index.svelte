@@ -58,12 +58,4 @@
     </label>
     <div class={comicSans}>COMIC SANS</div>
     <div class="alert alert-success">UPDATE #1 TEST</div>
-    <div class="alert alert-success">UPDATE #1 TEST</div>
-    <div class="alert alert-success">UPDATE #1 TEST</div>
-    <div class="alert alert-success">UPDATE #1 TEST</div>
-    <div class="alert alert-success">UPDATE #1 TEST</div>
-    <div class="alert alert-success">UPDATE #1 TEST</div>
-    <div class="alert alert-success">UPDATE #1 TEST</div>
-    <div class="alert alert-success">UPDATE #1 TEST</div>
-    <div class="alert alert-success">UPDATE #1 TEST</div>
 </main>
