@@ -29,7 +29,7 @@
         >
             Count: {count}
         </button>
-        <button class="btn btn-primary">DUI</button>
+        <button class="btn btn-primary">DUI Button</button>
         <div class="text-blue-500 dark:text-red-500">DARKMODE</div>
     </div>
     <label class="swap swap-rotate">
@@ -56,6 +56,14 @@
             /></svg
         >
     </label>
-
     <div class={comicSans}>COMIC SANS</div>
+    <div class="alert alert-success">UPDATE #1 TEST</div>
+    <div class="alert alert-success">UPDATE #1 TEST</div>
+    <div class="alert alert-success">UPDATE #1 TEST</div>
+    <div class="alert alert-success">UPDATE #1 TEST</div>
+    <div class="alert alert-success">UPDATE #1 TEST</div>
+    <div class="alert alert-success">UPDATE #1 TEST</div>
+    <div class="alert alert-success">UPDATE #1 TEST</div>
+    <div class="alert alert-success">UPDATE #1 TEST</div>
+    <div class="alert alert-success">UPDATE #1 TEST</div>
 </main>
