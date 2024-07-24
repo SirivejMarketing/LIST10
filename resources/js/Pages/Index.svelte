@@ -18,6 +18,9 @@
     // });
 </script>
 
+<svelte:head>
+    <title>LIST10</title>
+</svelte:head>
 {title}
 <main>
     <div class="flex flex-col items-center text-center space-y-4">
