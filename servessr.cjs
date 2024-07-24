@@ -11,12 +11,14 @@ app.listen(port, () => {
     );
 });
 import("./bootstrap/ssr/ssr.js")
-    .then((module) => {
-        console.log("Imported module:", module);
-        if (typeof module.handler === "function") {
-            app.use(module.handler);
+    .then(({ handler }) => {
+        if (typeof handler === "function") {
+            app.use(handler);
+            console.log(
+                "Inertia SSR handler successfully loaded and attached."
+            );
         } else {
-            console.error("Handler is not a function:", module.handler);
+            console.error("Imported handler is not a function:", handler);
         }
     })
     .catch((err) => {

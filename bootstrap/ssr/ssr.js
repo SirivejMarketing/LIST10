@@ -330,14 +330,24 @@ async function createInertiaApp({ id = "app", resolve, setup, progress = {}, pag
   }
 }
 derived(store, ($store) => $store.page);
-createServer(
+const pages = /* @__PURE__ */ Object.assign({ "./Pages/Index.svelte": __vite_glob_0_0 });
+const render = createServer(
   (page) => createInertiaApp({
     page,
     resolve: (name) => {
-      const pages = /* @__PURE__ */ Object.assign({
-        "./Pages/Index.svelte": __vite_glob_0_0
-      });
       return pages[`./Pages/${name}.svelte`];
     }
   })
 );
+function handler(req, res) {
+  render(req, res, (err) => {
+    if (err) {
+      console.error(err);
+      res.statusCode = 500;
+      res.end("Internal Server Error");
+    }
+  });
+}
+export {
+  handler
+};
