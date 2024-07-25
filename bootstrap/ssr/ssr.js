@@ -337,7 +337,8 @@ const render = createServer(
     resolve: (name) => {
       return pages[`./Pages/${name}.svelte`];
     }
-  })
+  }),
+  process.env.PORT ?? 8080
 );
 function handler(req, res) {
   render(req, res, (err) => {

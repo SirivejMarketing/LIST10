@@ -3,13 +3,15 @@ import createServer from "@inertiajs/svelte/server";
 
 const pages = import.meta.glob("./Pages/**/*.svelte", { eager: true });
 
-const render = createServer((page) =>
-    createInertiaApp({
-        page,
-        resolve: (name) => {
-            return pages[`./Pages/${name}.svelte`];
-        },
-    })
+const render = createServer(
+    (page) =>
+        createInertiaApp({
+            page,
+            resolve: (name) => {
+                return pages[`./Pages/${name}.svelte`];
+            },
+        }),
+    process.env.PORT ?? 13715
 );
 
 export function handler(req, res) {
