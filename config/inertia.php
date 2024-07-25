@@ -22,8 +22,9 @@ return [
     'ssr' => [
 
         'enabled' => true,
-        'url' => 'http://127.0.0.1:' . env('VITE_INERTIA_SSR_PORT', 13714),
+        // 'url' => 'http://127.0.0.1:' . env('VITE_INERTIA_SSR_PORT', 13714),
         // 'url' => 'http://127.0.0.1:8080',
+        'url' => 'https://lab.sirivejhospital.com',
 
         // 'bundle' => base_path('bootstrap/ssr/ssr.mjs'),
 
