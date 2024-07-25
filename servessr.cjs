@@ -1,7 +1,7 @@
-// const polka = require("polka");
+const polka = require("polka");
 const dotenv = require("dotenv");
 dotenv.config();
-// const app = polka();
+const app = polka();
 // import("./bootstrap/ssr/ssr.js")
 //     .then(({ handler }) => {
 //         if (typeof handler === "function") {
@@ -17,10 +17,10 @@ dotenv.config();
 //         console.error("Failed to import handler:", err);
 //         process.exit(1);
 //     });
-// app.get("/healthcheck", (req, res) => {
-//     res.end("ok");
-// });
-async function loadApp() {
-    await import("./bootstrap/ssr/ssr.js");
-}
-loadApp();
+app.get("/healthcheck", (req, res) => {
+    res.end("ok");
+});
+// async function loadApp() {
+//     await import("./bootstrap/ssr/ssr.js");
+// }
+// loadApp();
