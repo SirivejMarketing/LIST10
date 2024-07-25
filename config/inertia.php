@@ -22,8 +22,8 @@ return [
     'ssr' => [
 
         'enabled' => true,
-
-        'url' => 'http://127.0.0.1:8080',
+        'url' => 'http://127.0.0.1:' . env('VITE_INERTIA_SSR_PORT', 13714),
+        // 'url' => 'http://127.0.0.1:8080',
 
         // 'bundle' => base_path('bootstrap/ssr/ssr.mjs'),
 
@@ -38,6 +38,7 @@ return [
     | filesystem. For instance, when using `assertInertia`, the assertion
     | attempts to locate the component as a file relative to any of the
     | paths AND with any of the extensions specified here.
+app.listen(port, () => {
     |
     */
 

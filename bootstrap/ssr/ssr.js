@@ -338,7 +338,8 @@ const render = createServer(
       return pages[`./Pages/${name}.svelte`];
     }
   }),
-  process.env.PORT ?? 13715
+  // process.env.PORT ?? 13715
+  process.env.VITE_INERTIA_SSR_PORT || 13714
 );
 function handler(req, res) {
   render(req, res, (err) => {
