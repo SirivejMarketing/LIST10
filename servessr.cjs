@@ -17,6 +17,14 @@ const app = polka();
 //         console.error("Failed to import handler:", err);
 //         process.exit(1);
 //     });
+const port = process.env.PORT ?? 3000;
+app.listen(port, () => {
+    console.log(
+        `Server started on port ${
+            port === "passenger" ? "Phusion Passenger" : port
+        }`
+    );
+});
 app.get("/healthcheck", (req, res) => {
     res.end("ok");
 });
