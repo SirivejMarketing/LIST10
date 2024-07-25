@@ -2,14 +2,6 @@ const polka = require("polka");
 const dotenv = require("dotenv");
 dotenv.config();
 const app = polka();
-const port = process.env.PORT ?? 3000;
-app.listen(port, () => {
-    console.log(
-        `Server started on port ${
-            port === "passenger" ? "Phusion Passenger" : port
-        }`
-    );
-});
 import("./bootstrap/ssr/ssr.js")
     .then(({ handler }) => {
         if (typeof handler === "function") {
