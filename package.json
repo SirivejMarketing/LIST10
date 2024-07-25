@@ -4,7 +4,8 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build && vite build --ssr",
-        "ssr": "node servessr.cjs"
+        "serve": "node servessr.cjs",
+        "ssr": "node bootstrap/ssr/ssr.js"
     },
     "devDependencies": {
         "@rollup/plugin-typescript": "^11.1.5",
